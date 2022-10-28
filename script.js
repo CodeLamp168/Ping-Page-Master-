@@ -18,6 +18,11 @@ form.addEventListener('submit', (e) => {
         error.classList.remove('error-notif')
         
     }
+    else if(email.value === ''){
+        email.classList.remove('input-correct')
+        email.classList.add('input-error')
+        error.classList.add('error-notif')
+    }
 
     else 
     {
